@@ -1,0 +1,22 @@
+regionprops: medir as propriedades de regiões da img
+
+regionprops(BW,properties): retorna propriedades para cada 8
+componentes conectados na img binária
+
+BoundingBox: retorna o menor retangulo contendo a região
+
+cat: concatena estruturas contendo quadrados em uma única matriz
+
+encontrar os não zeros
+
+find(imagem): gera matriz com coordenadas indexadas
+
+conversão para as coordenadas matriciais
+
+[linha coluna]=ind2sub(size(imagem),find(imagem))
+
+a resposta esta na ordem de coluna da imagem
+ex: [11 31 41 22 32 33]
+
+any=identifica qual coluna tem elementos diferentes de 0
+
